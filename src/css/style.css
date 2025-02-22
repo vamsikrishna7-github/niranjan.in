@@ -76,3 +76,24 @@
     color: white;
 }
 
+/* projects */
+.font-pn{
+    font-family: sora;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}
+.font-ph{
+    font-family: sora;
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+}
+.font-pp{
+    font-family: sora;
+    color: rgb(207, 207, 208);
+    font-size: 13px;
+    font-weight: 10;
+    line-height: 24px;
+    letter-spacing: 2%;
+}
