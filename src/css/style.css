@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sora:wght@100..800&display=swap');
+*{
+    font-family: sora;
+}
+
+.font-h{
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 20px; 
+}
+
+.font-H5{
+    font-family: 'Solitreo', cursive; 
+    font-weight: 600;
+    font-size: 20px; 
+    line-height: 24px; 
+    letter-spacing: -0.02em; 
+}
+
+.font-H1{
+    font-family: sora;
+    font-weight: 600; 
+}
+.dev{
+    font-size: 1.2em;
+    font-weight: 700;
+    font-size: xx-large;
+    color: #333;
+}
+.custom-img{
+    width: 450px;
+    height: 400px;
+
+}
+
+.custom-bt{
+    border-radius: 5px !important;
+    background-color: black !important;
+    border: 0px !important;
+}
+
+.custom-bt:hover{
+    background-color: gray !important;;
+}
+
+#svg{
+    filter: brightness(0) invert(1);
+}
+
+.sm-h{
+    font-weight: 400;
+}
+.md-h{
+    font-weight: 800;
+}
+.cust-bt{
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+    background-color: transparent;
+    font-family: sora !important;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cust-bt span {
+    margin-top: -5px;
+    line-height: 1;
+}
+
+.cust-bt:hover{
+    background-color: black;
+    color: white;
+}
+
