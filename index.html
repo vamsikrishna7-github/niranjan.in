@@ -109,29 +109,77 @@
     </section>
 
     <section id="projects">
-      <div class="container-fluid vh-100 bg-black">
-        <div class="container-fluid container-md border border-white vh-100">
+      <div class="container-fluid bg-black">
+        <div class="container-fluid container-md border border-white">
           <div class="row">
             <div class="col-12 text-center text-white h3 border my-5"><span class="sm-h">My </span><span class="font-H1 md-h">Projects</span></div>
           </div>
-          <div class="row">
-            <div class="col p-2 text-center "><img class="rounded-4" width="325" height="250" src="./src/img/projects/projectcard.webp" alt=""></div>
-            <div class="col p-2 justify-content-start">
+          <div class="row border border-white mx-md-5 my-md-5">
+            <div class="col border text-end me-md-5 d-flex align-items-center justify-content-center justify-content-lg-end"><img class="rounded-4 project-img" width="300" height="250" src="./src/img/projects/projectcard.webp" alt=""></div>
+            <div class="col py-3 me-lg-5 border border-danger text-start align-content-center cust-margin cust-m">
               <span class="font-pn">01</span><br>
               <span class="font-ph">AWS EC2 and VPC Setup</span><br>
               <span class="font-pp">Project focused on AWS infrastructure setup and management.
                 Configured secure AWS EC2 instances within a custom VPC, establishing security groups and inbound/outbound rules.
-                Deployed a web server on EC2 to demonstrate basic AWS management skills.</span>
+                Deployed a web server on EC2 to demonstrate basic AWS management skills.</span><br>
+              <a href="#" class="my-3 d-inline-block"><img class="a-hover" width="20" height="20" src="https://img.icons8.com/pastel-glyph/25/FFFFFF/external-link--v1.png" alt="external-link--v1"/></a>
+            </div>
+          </div>
+          <div class="row flex-md-row-reverse border border-white mx-md-5 my-md-5">
+            <div class="col border text-start me-md-5 d-flex align-items-center justify-content-center justify-content-lg-start"><img class="rounded-4 project-img" width="300" height="250" src="./src/img/projects/projectcard.webp" alt=""></div>
+            <div class="col py-3 me-lg-5 border border-danger text-start align-content-center cust-margin cust-m">
+              <span class="font-pn">01</span><br>
+              <span class="font-ph">AWS EC2 and VPC Setup</span><br>
+              <span class="font-pp">Project focused on AWS infrastructure setup and management.
+                Configured secure AWS EC2 instances within a custom VPC, establishing security groups and inbound/outbound rules.
+                Deployed a web server on EC2 to demonstrate basic AWS management skills.</span><br>
+              <a href="#" class="my-3 d-inline-block"><img class="a-hover" width="20" height="20" src="https://img.icons8.com/pastel-glyph/25/FFFFFF/external-link--v1.png" alt="external-link--v1"/></a>
+            </div>
+          </div>
+          <div class="row border border-white mx-md-5 my-md-5">
+            <div class="col border text-end me-md-5 d-flex align-items-center justify-content-center justify-content-lg-end"><img class="rounded-4 project-img" width="300" height="250" src="./src/img/projects/projectcard.webp" alt=""></div>
+            <div class="col py-3 me-lg-5 border border-danger text-start align-content-center cust-margin cust-m">
+              <span class="font-pn">01</span><br>
+              <span class="font-ph">AWS EC2 and VPC Setup</span><br>
+              <span class="font-pp">Project focused on AWS infrastructure setup and management.
+                Configured secure AWS EC2 instances within a custom VPC, establishing security groups and inbound/outbound rules.
+                Deployed a web server on EC2 to demonstrate basic AWS management skills.</span><br>
+              <a href="#" class="my-3 d-inline-block"><img class="a-hover" width="20" height="20" src="https://img.icons8.com/pastel-glyph/25/FFFFFF/external-link--v1.png" alt="external-link--v1"/></a>
             </div>
           </div>
         </div>
-        
       </div>
     </section>
 
-    <footer class="bg-light py-3">
-      <div class="container text-center">
-        <p>&copy; 2023 Niranjan Rao. All rights reserved.</p>
+    <section id="contact">
+      <div class="container-fluid container-md my-5">
+        <div class="row row-reverse">
+          <div class="col-md col-sm-12">
+            <form action="submit" method="post">
+              <input type="text" class="form-control border border-dark rounded-1 mb-3 font-p" placeholder="Name">
+              <input type="text" class="form-control border border-dark rounded-1 mb-3 font-p" placeholder="Email">
+              <input type="text" class="form-control  border border-dark rounded-1 mb-3 font-p" placeholder="Subject">
+              <textarea class="form-control  border border-dark rounded-1 mb-3 font-p" rows="3" placeholder="Message"></textarea>
+              <button class="btn btn-dark rounded-1 mb-3 me-1">Get In Touch</button>
+              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 "><img class="contact-btn" src="./src/img/github.svg" alt=""></button>
+              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 "><img class="contact-btn" src="./src/img/linkedin.svg" alt=""></button>
+              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 "><img class="contact-btn" src="./src/img/twitter.svg" alt=""></button>
+              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 "><img class="contact-btn" src="./src/img/envelope.svg" alt=""></button>
+            </form>
+          </div>
+          <div class="col mb-3">
+            <h2 class="font-H1">Hi, I'm <span class="font-b">Niranjan Rao</span>, a DevOps Engineer.</h2>
+            <p class="font-p">I'm a DevOps Engineer with a passion for automation and cloud infrastructure. I have experience with AWS, Docker, Kubernetes, Jenkins, and more. I'm always looking to learn new technologies and improve my skills.</p>
+            <h5>Niranjan.rao@gmail.com</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-white py-3">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="text-decoration-none text-white">Niranjan Rao</a>
+        <p class="text-end">&copy; 2025 Niranjan Rao <br> All rights reserved.</p>
       </div>
     </footer>
 

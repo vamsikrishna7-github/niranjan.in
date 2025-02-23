@@ -20,5 +20,30 @@ window.addEventListener('resize', () => {
         container.classList.remove('w-75');
         console.log("removed");
     }
+
+    /* My Projects */
+    if(window.innerWidth < 334){
+        const skills = document.querySelectorAll('.project-img');
+        skills.forEach(skill => {
+            skill.style.width = '250px';
+        });
+    }
+    else{
+        const skills = document.querySelectorAll('.project-img');
+        skills.forEach(skill => {
+            skill.style.width = '300px';
+        });
+    }
+});
+
+/* My Projects */
+document.addEventListener('DOMContentLoaded', () => {
+    if(window.innerWidth <= 334){
+        const skills = document.querySelectorAll('.project-img');
+        skills.forEach(skill => {
+            skill.style.width = '250px';
+        });
+        console.log("added " +'250px');
+    }
 });
 
