@@ -3,6 +3,14 @@
     font-family: sora;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 60px;
+} 
+
 .font-h{
     font-family: 'Sora', sans-serif;
     font-weight: 700;
@@ -125,4 +133,56 @@
     .row-reverse {
       flex-direction: column-reverse; 
     }
+}
+
+/* about */
+.font-ap{
+    font-family: sora;
+    font-size: 13px;
+}
+
+/* experience */
+.font-ep{
+    font-family: sora;
+    font-size: 13px;
+    font-weight: 10;
+}
+
+.font-Ep{
+    font-family: sora;
+    font-size: 15px;
+    font-weight: 40;
+    color: white !important;
+}
+
+/* footer */
+.footer a{
+    font-size: 14px !important;;
+}
+
+.footer a img {
+    filter: brightness(80%); 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.footer a:hover img {
+    transform: scale(1.2); 
+    filter: brightness(100%);
+}
+
+@media(max-width: 572px){
+    .onscrollTop{
+        bottom: 80px !important;
+    }
+}
+
+
+input:focus, textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: inherit !important;
+}
+
+#home {
+    scroll-margin-top: 50px !important;
 }
