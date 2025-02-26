@@ -14,7 +14,7 @@
       <i class="bi bi-arrow-up"></i></a>
     </button>
     <!-- navbar section -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light position-sticky top-0 z-3" id="navbar">
+    <nav class="navbar navbar-expand-md navbar-light bg-white position-sticky top-0 z-3" id="navbar">
       <div class="container-fluid container-md">
         <a class="navbar-brand font-h" href="#">Niranjan</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
       <div class="container-fluid container-md">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <h2 class="sm-h text-secondary">Hello, I am <span class="font-H1 text-dark">Niranjan Rao</span>, <span class="dev">DevOps Engineer</span></h2>
+            <h1 id="h1">Hello, I am <span id="hero-name">Niranjan Rao</span>, <span id="role-name">DevOps</span> Engineer</h1>
             <p>Passionate about automating and optimizing cloud infrastructure. With hands-on experience in AWS services like EC2, VPC, RDS, and CloudWatch, I specialize in deploying, managing, and monitoring production-level applications. Skilled in CI/CD automation using Jenkins and GitHub Actions, I strive to build scalable, secure, and efficient DevOps solutions.</p>
             <div class="d-flex">
               <a target="_blank" href="https://github.com/niranjan-46" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark me-3"><img class="contact-btn" src="./src/img/github.svg" alt=""></a>
@@ -159,77 +159,158 @@
       </div>
     </section>
     <!-- project section -->
-    <section id="projects">
-      <div class="container-fluid bg-black">
-        <div class="container-fluid container-md">
-          <div class="row">
-            <div class="col-12 text-center text-white h3 my-5"><span class="sm-h">My </span><span class="font-H1 md-h">Projects</span></div>
+    <section id="projects" class="bg-black py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center text-white mb-5">
+            <h2 class="mb-3"><span class="sm-h">My </span><span class="font-H1 md-h">Projects</span></h2>
           </div>
-          <div class="row mx-md-5 my-md-5">
-            <div class="col text-end me-md-5 d-flex align-items-center justify-content-center justify-content-lg-end"><img class="rounded-4 project-img" width="300" height="250" src="./src/img/projects/project-1.png" alt=""></div>
-            <div class="col py-3 me-lg-5 text-start align-content-center cust-margin cust-m">
-              <span class="font-pn">01</span><br>
-              <span class="font-ph">DS Edify: Scalable & Reliable Web Application</span><br>
-              <span class="font-pp">Zero Downtime Deployment – Leveraged AWS App Runner, Route 53, and DynamoDB Global Tables for uninterrupted service.
-                Multi-Region Deployment – Implemented across multiple AWS regions with ECR replication for high availability.
-                PostgreSQL Database – Utilized PostgreSQL for efficient data management and reliability.
-                Secure & Optimized Architecture – Configured VPC, subnets, and load balancers to enhance security and performance.
-                Real-Time Monitoring – Used AWS CloudWatch for tracking system health and quick issue resolution.</span><br>
-              <a href="#" class="my-3 d-inline-block"><img class="a-hover" width="20" height="20" src="https://img.icons8.com/pastel-glyph/25/FFFFFF/external-link--v1.png" alt="external-link--v1"/></a>
-            </div>
+        </div>
+    
+        <!-- Project 1 -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6 text-center text-md-end mb-4 mb-md-0">
+            <img
+              class="img-fluid rounded-4"
+              src="./src/img/projects/project-1.png"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="DS Edify Project"
+              loading="lazy"
+            />
           </div>
-          <div class="row flex-md-row-reverse mx-md-5 my-md-5">
-            <div class="col text-start me-md-5 d-flex align-items-center justify-content-center justify-content-lg-start"><img class="rounded-4 project-img" width="300" height="250" src="./src/img/projects/project-2.png" alt=""></div>
-            <div class="col py-3 me-lg-5 text-start align-content-center cust-margin cust-m">
-              <span class="font-pn">02</span><br>
-              <span class="font-ph">CI/CD Pipeline with Jenkins, GitHub, SonarQube & Docker</span><br>
-              <span class="font-pp">Key Highlights:
-                Automated Build Process – Integrated Jenkins to pull code from GitHub, ensuring continuous integration.
-                Code Quality Analysis – Used SonarQube to analyze code for bugs, vulnerabilities, and maintainability.
-                Containerized Deployment – Built and deployed Docker images for efficient application deployment.
-                Seamless Integration – Automated code scanning and deployment for a streamlined DevOps workflow.
-                User-Centric Delivery – Ensured smooth deployment, allowing end users to access the latest updates effortlessly.</span><br>
-              <a href="#" class="my-3 d-inline-block"><img class="a-hover" width="20" height="20" src="https://img.icons8.com/pastel-glyph/25/FFFFFF/external-link--v1.png" alt="external-link--v1"/></a>
-            </div>
+          <div class="col-md-6">
+            <span class="d-block font-pn mb-2">01</span>
+            <h3 class="font-ph mb-3">DS Edify: Scalable & Reliable Web Application</h3>
+            <p class="font-pp mb-3">
+              Zero Downtime Deployment – Leveraged AWS App Runner, Route 53, and DynamoDB Global Tables for uninterrupted service.
+              Multi-Region Deployment – Implemented across multiple AWS regions with ECR replication for high availability.
+              PostgreSQL Database – Utilized PostgreSQL for efficient data management and reliability.
+              Secure & Optimized Architecture – Configured VPC, subnets, and load balancers to enhance security and performance.
+              Real-Time Monitoring – Used AWS CloudWatch for tracking system health and quick issue resolution.
+            </p>
+            <a href="#" class="d-inline-block">
+              <img
+                class="a-hover"
+                width="20"
+                height="20"
+                src="https://img.icons8.com/pastel-glyph/25/FFFFFF/external-link--v1.png"
+                alt="External Link"
+              />
+            </a>
           </div>
-          <div class="row mx-md-5 my-md-5">
-            <div class="col text-end me-md-5 d-flex align-items-center justify-content-center justify-content-lg-end"><img class="rounded-4 project-img" width="300" height="250" src="./src/img/projects/project-3.png" alt=""></div>
-            <div class="col py-3 me-lg-5  text-start align-content-center cust-margin cust-m">
-              <span class="font-pn">03</span><br>
-              <span class="font-ph">Amazon Prime Clone: Fully Automated DevOps Project</span><br>
-              <span class="font-pp">Key Highlights:
-                End-to-End CI/CD Pipeline – Implemented automation using Jenkins, GitHub, and SonarQube for continuous integration and code quality checks.
-                Containerized Deployment – Used Docker to build and manage application images, stored securely in AWS ECR.
-                Kubernetes Orchestration – Deployed containers on AWS EKS, ensuring scalability and efficient resource management.
-                Infrastructure as Code (IaC) – Managed cloud resources using Terraform, enabling automated and consistent infrastructure provisioning.
-                Monitoring & Security – Integrated Prometheus, Grafana, and ArgoCD for real-time monitoring, and Aqua Trivy for security vulnerability scanning.</span><br>
-              <a href="#" class="my-3 d-inline-block"><img class="a-hover" width="20" height="20" src="https://img.icons8.com/pastel-glyph/25/FFFFFF/external-link--v1.png" alt="external-link--v1"/></a>
-            </div>
+        </div>
+    
+        <!-- Project 2 -->
+        <div class="row align-items-center flex-md-row-reverse mb-5">
+          <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+            <img
+              class="img-fluid rounded-4"
+              src="./src/img/projects/project-2.png"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="CI/CD Pipeline Project"
+              loading="lazy"
+            />
           </div>
-          <div class="row flex-md-row-reverse mx-md-5 my-md-5">
-            <div class="col text-start me-md-5 d-flex align-items-center justify-content-center justify-content-lg-start"><img class="rounded-4 project-img" width="300" height="250" src="./src/img/projects/project-4.png" alt=""></div>
-            <div class="col py-3 me-lg-5 text-start align-content-center cust-margin cust-m">
-              <span class="font-pn">04</span><br>
-              <span class="font-ph">Kubernetes-Based Video to Audio Converter Microservices Application</span><br>
-              <span class="font-pp">Developed a microservices-based application for converting video files to audio.
-                Deployed on Kubernetes for scalability, fault tolerance, and efficient resource management.
-                Integrated AWS services for API gateway, storage, and messaging.
-                Key Technologies & Tools:
-                Backend: Python (FastAPI) for RESTful API development.
-                Containerization & Orchestration: Docker & Kubernetes for deployment.
-                Cloud Services: AWS API Gateway, EC2, and RDS for infrastructure.
-                Database Management: PostgreSQL for structured data, MongoDB for unstructured storage.
-                Message Queue: RabbitMQ for asynchronous processing.
-                Authentication & Security: JWT-based authentication.
-                CI/CD Pipeline: Jenkins for automated builds and deployments.
-                Monitoring & Scaling: Kubernetes HPA (Horizontal Pod Autoscaler) for dynamic scaling.
-                Notifications: Email and push notifications for user interactions.</span><br>
-              <a target="_blank" href="https://github.com/niranjan-46/microservices-python-app/tree/master" class="my-3 d-inline-block"><img class="a-hover" width="20" height="20" src="https://img.icons8.com/pastel-glyph/25/FFFFFF/external-link--v1.png" alt="external-link--v1"/></a>
-            </div>
+          <div class="col-md-6">
+            <span class="d-block font-pn mb-2">02</span>
+            <h3 class="font-ph mb-3">CI/CD Pipeline with Jenkins, GitHub, SonarQube & Docker</h3>
+            <p class="font-pp mb-3">
+              Key Highlights:
+              Automated Build Process – Integrated Jenkins to pull code from GitHub, ensuring continuous integration.
+              Code Quality Analysis – Used SonarQube to analyze code for bugs, vulnerabilities, and maintainability.
+              Containerized Deployment – Built and deployed Docker images for efficient application deployment.
+              Seamless Integration – Automated code scanning and deployment for a streamlined DevOps workflow.
+              User-Centric Delivery – Ensured smooth deployment, allowing end users to access the latest updates effortlessly.
+            </p>
+            <a href="#" class="d-inline-block">
+              <img
+                class="a-hover"
+                width="20"
+                height="20"
+                src="https://img.icons8.com/pastel-glyph/25/FFFFFF/external-link--v1.png"
+                alt="External Link"
+              />
+            </a>
+          </div>
+        </div>
+    
+        <!-- Project 3 -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6 text-center text-md-end mb-4 mb-md-0">
+            <img
+              class="img-fluid rounded-4"
+              src="./src/img/projects/project-3.png"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="Amazon Prime Clone Project"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-md-6">
+            <span class="d-block font-pn mb-2">03</span>
+            <h3 class="font-ph mb-3">Amazon Prime Clone: Fully Automated DevOps Project</h3>
+            <p class="font-pp mb-3">
+              Key Highlights:
+              End-to-End CI/CD Pipeline – Implemented automation using Jenkins, GitHub, and SonarQube for continuous integration and code quality checks.
+              Containerized Deployment – Used Docker to build and manage application images, stored securely in AWS ECR.
+              Kubernetes Orchestration – Deployed containers on AWS EKS, ensuring scalability and efficient resource management.
+              Infrastructure as Code (IaC) – Managed cloud resources using Terraform, enabling automated and consistent infrastructure provisioning.
+              Monitoring & Security – Integrated Prometheus, Grafana, and ArgoCD for real-time monitoring, and Aqua Trivy for security vulnerability scanning.
+            </p>
+            <a href="#" class="d-inline-block">
+              <img
+                class="a-hover"
+                width="20"
+                height="20"
+                src="https://img.icons8.com/pastel-glyph/25/FFFFFF/external-link--v1.png"
+                alt="External Link"
+              />
+            </a>
+          </div>
+        </div>
+    
+        <!-- Project 4 -->
+        <div class="row align-items-center flex-md-row-reverse mb-5">
+          <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+            <img
+              class="img-fluid rounded-4"
+              src="./src/img/projects/project-4.png"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="Kubernetes-Based Video to Audio Converter Project"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-md-6">
+            <span class="d-block font-pn mb-2">04</span>
+            <h3 class="font-ph mb-3">Kubernetes-Based Video to Audio Converter Microservices Application</h3>
+            <p class="font-pp mb-3">
+              Developed a microservices-based application for converting video files to audio.
+              Deployed on Kubernetes for scalability, fault tolerance, and efficient resource management.
+              Integrated AWS services for API gateway, storage, and messaging.
+              Key Technologies & Tools:
+              Backend: Python (FastAPI) for RESTful API development.
+              Containerization & Orchestration: Docker & Kubernetes for deployment.
+              Cloud Services: AWS API Gateway, EC2, and RDS for infrastructure.
+              Database Management: PostgreSQL for structured data, MongoDB for unstructured storage.
+              Message Queue: RabbitMQ for asynchronous processing.
+              Authentication & Security: JWT-based authentication.
+              CI/CD Pipeline: Jenkins for automated builds and deployments.
+              Monitoring & Scaling: Kubernetes HPA (Horizontal Pod Autoscaler) for dynamic scaling.
+              Notifications: Email and push notifications for user interactions.
+            </p>
+            <a target="_blank" href="https://github.com/niranjan-46/microservices-python-app/tree/master" class="d-inline-block">
+              <img
+                class="a-hover"
+                width="20"
+                height="20"
+                src="https://img.icons8.com/pastel-glyph/25/FFFFFF/external-link--v1.png"
+                alt="External Link"
+              />
+            </a>
           </div>
         </div>
       </div>
     </section>
+
     <!-- contact me section -->
     <section id="contact-me">
       <div class="container-fluid container-md my-5">
@@ -249,9 +330,9 @@
             </form>
           </div>
           <div class="col mb-3">
-            <h2 class="font-H1">Hi, I'm <span class="font-b">Niranjan Rao</span>, a DevOps Engineer.</h2>
+            <h1 id="h1">Hello, I am <span id="hero-name">Niranjan Rao</span>, <span id="role-name">DevOps</span> Engineer</h1>
             <p class="font-p">I'm a DevOps Engineer with a passion for automation and cloud infrastructure. I have experience with AWS, Docker, Kubernetes, Jenkins, and more. I'm always looking to learn new technologies and improve my skills.</p>
-            <h5>Niranjan.rao@gmail.com</h5>
+            <h6 class="">niranjan.devops.specialist @gmail.com</h6>
           </div>
         </div>
       </div>

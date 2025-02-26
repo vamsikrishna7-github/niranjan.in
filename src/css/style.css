@@ -14,13 +14,13 @@ section {
 .font-h{
     font-family: 'Sora', sans-serif;
     font-weight: 700;
-    font-size: 20px; 
+    font-size: 1.1rem; 
 }
 
 .font-H5{
     font-family: 'Solitreo', cursive; 
     font-weight: 600;
-    font-size: 20px; 
+    font-size: 1.1rem; 
     line-height: 24px; 
     letter-spacing: -0.02em; 
 }
@@ -85,26 +85,29 @@ section {
 }
 
 /* projects */
-.font-pn{
-    font-family: sora;
-    color: white;
-    font-weight: 700;
-    font-size: 25px;
-}
-.font-ph{
-    font-family: sora;
-    color: white;
-    font-size: 17px;
-    font-weight: 550;
-}
-.font-pp{
-    font-family: sora;
-    color: rgb(180, 180, 181);
-    font-size: 13px;
-    font-weight: 10;
-}
 
-.a-hover:hover {
+.font-pn {
+    font-family: 'sora', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: white;
+}
+  
+  .font-ph {
+    font-family: 'sora', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+}
+  
+  .font-pp {
+    font-family: 'sora', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #71717a;
+}
+  .a-hover:hover {
     filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(180deg) saturate(500%);
 }
 
@@ -185,4 +188,21 @@ input:focus, textarea:focus {
 
 #home {
     scroll-margin-top: 50px !important;
+}
+/* home section font */
+#h1 {
+    color: #404040;
+}
+#hero-name {
+    color: #404040;
+    font-size: 40px;
+    font-weight: 900;
+}
+#role-name {
+    font-family: 'Tahoma';
+
+    color: transparent;
+    font-size: 50px;
+    font-weight: 1000;
+    -webkit-text-stroke: 3px #404040;
 }

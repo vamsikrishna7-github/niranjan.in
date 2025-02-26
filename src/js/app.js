@@ -37,15 +37,6 @@ window.addEventListener('resize', () => {
 });
 
 /* My Projects */
-document.addEventListener('DOMContentLoaded', () => {
-    if(window.innerWidth <= 334){
-        const skills = document.querySelectorAll('.project-img');
-        skills.forEach(skill => {
-            skill.style.width = '250px';
-        });
-        // console.log("added " +'250px');
-    }
-});
 
 // scroll button
 function onscrollTop(t) {
@@ -67,16 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// // responsive nav
-// function activelink(link){
-//     const links = document.querySelectorAll('.nav-link');
-//     links.forEach(l => {
-//         l.classList.remove('active');
-//     });
-//     link.classList.add('active');
-// }
-
-
+// responsive nav-bar
 function activelink(){
     const sections = document.querySelectorAll('section');
     const links = document.querySelectorAll('.nav-link');
