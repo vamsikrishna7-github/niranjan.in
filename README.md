@@ -67,7 +67,9 @@ Steps to Set Up the Project
      EMAIL_HOST_USER = 'your-email@gmail.com'
      EMAIL_HOST_PASSWORD = 'your-email-password'
   8. Run the Development Server:
-     $ python manage.py runserver
+     $ python manage.py makemigrations
+     $ python manage.py migrate
+     $ python manage.py runserver #if any error is encountered for port number change port number to another port ex: 555
      #Visit http://127.0.0.1:8000/ in your browser to view the website.
      
 Usage
