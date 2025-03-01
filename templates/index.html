@@ -58,59 +58,172 @@
               <a target="_blank" href="https://github.com/niranjan-46" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark me-3"><img class="contact-btn" src="{% static 'img/github.svg' %}" alt=""></a>
               <a target="_blank" href="http://www.linkedin.com/in/niranjan-rao-annavarapu" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark me-3"><img class="contact-btn" src=" {% static 'img/linkedin.svg' %}" alt=""></a>
               <a target="_blank" href="https://x.com/niranjanan28651?s=21&t=ZwRQFbteB3_Wta00haEuiA" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark me-3"><img class="contact-btn" src=" {% static 'img/twitter.svg' %}" alt=""></a>
-              <a target="_blank" href="mailto:niranjan.devops.specialist@gmail.com" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark"><img class="contact-btn" src=" {% static 'img/envelope.svg' %} " alt=""></a>
+              <a id="contact-btn-home-last" target="_blank" href="mailto:niranjancloud9@gmail.com" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark"><img class="contact-btn" src=" {% static 'img/envelope.svg' %} " alt=""></a>
             </div>
           </div>
           <div class="col-md-6 text-center">
-            <img class="custom-img img-fluid border-bottom border-2 border-dark" src=" {% static 'img/ahero.png' %} " alt="">
+            <img class="custom-img img-fluid border-bottom border-2 border-dark" style="filter: grayscale(100%);" src=" {% static 'img/ahero.png' %} " alt="">
           </div>
         </div>
       </div>
     
-
+    <br>
+    <br>
+      
       <!-- skills section -->
       <div class="container-fluid container-md">
         <div class="container text-center cust-js">
+          <!-- Section Heading -->
           <div class="row mb-5 h3">
             <div class="col-12">
-              <span class="sm-h">My </span><span class="font-H1 md-h">Skills</span></div>
+              <span class="sm-h">My </span><span class="font-H1 md-h">Skills</span>
             </div>
-          <div class="row " >
-            <div class="col mb-4 col-md-2 ">
-              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="cust-bt"><img class="contact-btn" width="40" height="40" src="https://img.icons8.com/ios-filled/50/1A1A1A/python.png" alt="python"/><br><span>Python</span></button>
+          </div>
+      
+          <!-- Skill Buttons -->
+          <div class="row justify-content-center">
+            <!-- Linux -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/40/linux.png" alt="linux"/>
+                <span>Linux</span>
+              </button>
             </div>
-            <div class="col mb-4 col-md-2">
-              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="cust-bt"><img class="contact-btn" width="40" height="40" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/40/1A1A1A/external-amazon-web-services-a-subsidiary-of-amazon-that-provides-on-demand-cloud-computing-logo-bold-tal-revivo.png" alt="external-amazon-web-services-a-subsidiary-of-amazon-that-provides-on-demand-cloud-computing-logo-bold-tal-revivo"/> <br><span>Aws</span></button>
+      
+            <!-- Firewall -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/external-isometric-vectorslab/40/1A1A1A/external-Firewall-security-and-technology-isometric-vectorslab-3.png" alt="firewall"/>
+                <span>Firewall</span>
+              </button>
             </div>
-            <div class="col mb-4 col-md-2">
-              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="cust-bt"><img class="contact-btn" width="40" height="40" src="https://img.icons8.com/ios-filled/40/1A1A1A/console.png" alt="console"/><br><span>Bash</span></button>
+      
+            <!-- AWS -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/40/1A1A1A/external-amazon-web-services-a-subsidiary-of-amazon-that-provides-on-demand-cloud-computing-logo-bold-tal-revivo.png" alt="aws"/>
+                <span>AWS</span>
+              </button>
             </div>
-            <div class="col mb-4 col-md-2">
-              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="cust-bt"><img class="contact-btn" width="40" height="40" src="https://img.icons8.com/ios-filled/40/1A1A1A/git.png" alt="git"/><br><span>Git</span></button>
+      
+            <!-- Git -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/40/1A1A1A/git.png" alt="git"/>
+                <span>Git</span>
+              </button>
             </div>
-            <div class="col mb-4 col-md-2">
-              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="cust-bt"><img class="contact-btn" width="40" height="40" src="https://img.icons8.com/ios-filled/40/1A1A1A/docker.png" alt="docker"/><br><span>Docker</span></button>
+      
+            <!-- Ansible -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/windows/40/1A1A1A/ansible.png" alt="ansible"/>
+                <span>Ansible</span>
+              </button>
             </div>
-            <div class="col mb-4 col-md-2">
-              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="cust-bt"><img class="contact-btn" width="40" height="40" src="https://img.icons8.com/windows/100/1A1A1A/kubernetes.png" alt="kubernetes"/><br><span>kubernetes</span></button>
+      
+            <!-- Terraform -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/40/1A1A1A/terraform.png" alt="terraform"/>
+                <span>Terraform</span>
+              </button>
             </div>
-            <div class="col mb-4 col-md-2">
-              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="cust-bt"><img class="contact-btn" width="40" height="40" src="https://img.icons8.com/ios-filled/40/1A1A1A/jenkins.png" alt="jenkins"/><br><span>jenkins</span></button>
+      
+            <!-- Bash -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/40/1A1A1A/console.png" alt="bash"/>
+                <span>Bash</span>
+              </button>
             </div>
-            <div class="col mb-4 col-md-2">
-              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="cust-bt"><img class="contact-btn" width="40" height="40" src="https://img.icons8.com/ios/40/1A1A1A/maven-ios.png" alt="maven-ios"/><br><span>Maven</span></button>
+      
+            <!-- Docker -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/40/1A1A1A/docker.png" alt="docker"/>
+                <span>Docker</span>
+              </button>
             </div>
-            <div class="col mb-4 col-md-2">
-              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="cust-bt"><img class="contact-btn" width="40" height="40" src="https://img.icons8.com/windows/40/1A1A1A/ansible.png" alt="ansible"/><br><span>Ansible</span></button>
+      
+            <!-- Kubernetes -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/windows/100/1A1A1A/kubernetes.png" alt="kubernetes"/>
+                <span>Kubernetes</span>
+              </button>
             </div>
-            <div class="col mb-4 col-md-2">
-              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="cust-bt"><img class="contact-btn" width="40" height="40" src="https://img.icons8.com/ios-filled/40/1A1A1A/terraform.png" alt="terraform"/><br><span>Terraform</span></button>
+      
+            <!-- Jenkins -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/40/1A1A1A/jenkins.png" alt="jenkins"/>
+                <span>Jenkins</span>
+              </button>
             </div>
-            <div class="col mb-4 col-md-2">
-              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="cust-bt"><img class="contact-btn" width="40" height="40" src="https://img.icons8.com/external-others-maxicons/40/1A1A1A/external-prometheus-greek-mythology-others-maxicons-2.png" alt="external-prometheus-greek-mythology-others-maxicons-2"/><br><span>prometh-eus</span></button>
+      
+            <!-- Maven -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/ios/40/1A1A1A/maven-ios.png" alt="maven"/>
+                <span>Maven</span>
+              </button>
             </div>
-            <div class="col mb-4 col-md-2">
-              <button onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="cust-bt"><img class="contact-btn" width="40" height="40" src="https://img.icons8.com/ios-filled/40/1A1A1A/firewall.png" alt="firewall"/><br><span>Firewall</span></button>
+      
+            <!-- Nginx -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/100/1A1A1A/external-nginx-accelerates-content-and-application-delivery-improves-security-logo-bold-tal-revivo.png" alt="nginx"/>
+                <span>Nginx</span>
+              </button>
+            </div>
+      
+            <!-- Prometheus -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/external-others-maxicons/40/1A1A1A/external-prometheus-greek-mythology-others-maxicons-2.png" alt="prometheus"/>
+                <span>Prometheus</span>
+              </button>
+            </div>
+      
+            <!-- Grafana -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="{% static 'img/skills/grafana.png' %}" alt="grafana"/>
+                <span>Grafana</span>
+              </button>
+            </div>
+      
+            <!-- Data Dog -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="{% static 'img/skills/data-dog.png' %}" alt="data-dog"/>
+                <span>Data Dog</span>
+              </button>
+            </div>
+      
+            <!-- Sonarqube -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="{% static 'img/skills/sonarqube.png' %}" alt="sonarqube"/>
+                <span>Sonarqube</span>
+              </button>
+            </div>
+      
+            <!-- Pgadmin -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="{% static 'img/skills/pgadmin.png' %}" alt="pgadmin"/>
+                <span>Pgadmin</span>
+              </button>
+            </div>
+      
+            <!-- Python -->
+            <div class="col-6 col-md-2 mb-4">
+              <button class="cust-bt">
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/50/1A1A1A/python.png" alt="python"/>
+                <span>Python</span>
+              </button>
             </div>
           </div>
         </div>
@@ -118,21 +231,23 @@
     </section>
     <!-- experience section -->
     <section id="experience">
-      <div class="container-fluid container-md text-white p-1 pb-4 bg-black">
-        <div class="row">
-          <div class="col-12 text-center text-white h2 my-5"><span class="sm-h">My </span><span class="font-H1 md-h">Experience</span></div>
-        </div>
-        <div class="row  border border-secondary rounded-2 mx-md-5 mx-1 justify-content-between align-items-center">
-          <div class="col d-flex justify-content-between">
-            <div class="d-flex align-items-start">
-              <img class="mt-2" width="40px" height="40px" src=" {% static 'img/company.png' %} " alt="">
-              <h6 class="m-3">Associate Software Engineer
-              </h6>
-            </div> 
-              <p class=" text-secondary mt-3 font-Ep">July/2024-Present</p>
+      <div class="container-fluid  text-white  pb-5 bg-black">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center text-white h2 my-5"><span class="sm-h">My </span><span class="font-H1 md-h">Experience</span></div>
           </div>
-          <div class="container">
-            <p class="font-ep">At Dyashin TechnoSoft Pvt Ltd, I am an Associate Software Engineer where I manage and deploy applications utilizing AWS App Runner, EC2, and PostgreSQL RDS. I am responsible for devising cloud infrastructure that incorporates VPC, RDS and CloudWatch, as well as automating CI/CD pipelines with Jenkins and GitHub Actions. Additionally, I simplify deployments using Docker and Amazon ECR. Furthermore, I maintain infrastructure using Ansible, manage PostgreSQL, configure VPCs along with load balancers, and monitor high availability performance with CloudWatch.</p>
+          <div class="row  border border-secondary rounded-2  justify-content-between align-items-center">
+            <div class="col d-flex justify-content-between">
+              <div class="d-flex align-items-start">
+                <img class="mt-2" width="40px" height="40px" src=" {% static 'img/company.png' %} " alt="">
+                <h6 class="m-3">Associate Software Engineer
+                </h6>
+              </div> 
+                <p class=" text-secondary mt-3 font-Ep">July/2024-Present</p>
+            </div>
+            <div class="container">
+              <p class="font-ep">At Dyashin TechnoSoft Pvt Ltd, I am an Associate Software Engineer where I manage and deploy applications utilizing AWS App Runner, EC2, and PostgreSQL RDS. I am responsible for devising cloud infrastructure that incorporates VPC, RDS and CloudWatch, as well as automating CI/CD pipelines with Jenkins and GitHub Actions. Additionally, I simplify deployments using Docker and Amazon ECR. Furthermore, I maintain infrastructure using Ansible, manage PostgreSQL, configure VPCs along with load balancers, and monitor high availability performance with CloudWatch.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -143,7 +258,7 @@
         <div class="container-fluid border">
           <div class="row d-md-flex flex-column flex-md-row">
             <div class="col border text-center justify-content-center align-items-center d-flex">
-              <img class="border-bottom border-dark img-fluid" width="300px" height="400px" src=" {% static 'img/about/about-hero.png' %} " alt="">
+              <img class="border-bottom border-dark img-fluid" width="300px" height="400px" style="filter: grayscale(100%);" src=" {% static 'img/about/about-hero.png' %} " alt="">
             </div>
             <div class="col">
               <h2 class="sm-h my-3">About <span class="font-H md-h">Me</span></h2>
@@ -312,22 +427,69 @@
       </div>
     </section>
 
+    <!-- Team Section -->
+    <section id="team">
+      <div class="container">
+        <!-- Team Heading -->
+        <div class="row mt-5">
+          <div class="col-12 text-center text-black">
+            <h2 class="mb-3"><span class="sm-h">My </span><span class="font-H1 md-h">Team</span></h2>
+          </div>
+        </div>
+    
+        <!-- Team Cards -->
+        <div class="row g-4 d-flex justify-content-center text-center my-2">
+          <!-- Card 1 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card border-0 h-100" style="max-width: 300px;">
+              <div class="card-header bg-black text-white rounded-top">
+                <span class="overlay"></span>
+                <img class="img-card img-fluid" src=" {% static 'img/team/hero.jpg' %} " alt="img">
+              </div>
+              <div class="card-body">
+                <h4 class="title-card">Vamsi Krishna</h4>
+                <div class="hr"></div>
+                <p class="text-secondary text-body">Back-End Developer &amp; Front-End Developer</p>
+                <a target="_blank" href="https://www.linkedin.com/in/vamsi-krishna-nagidi-742314233/" class="btn btn-outline-dark">Contact me!</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card border-0 h-100" style="max-width: 300px;">
+              <div class="card-header bg-black text-white rounded-top">
+                <span class="overlay"></span>
+                <img class="img-card img-fluid" src=" {% static 'img/team/niranjan.jpg' %} " alt="img">
+              </div>
+              <div class="card-body">
+                <h4 class="title-card">Niranjan Rao</h4>
+                <div class="hr"></div>
+                <p class="text-secondary text-body">DevOps Engineer</p>
+                <a href="#" class="btn btn-outline-dark">Contact me!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- contact me section -->
     <section id="contact-me">
       <div class="container-fluid container-md my-5">
         <div class="row row-reverse">
-          <div class="col-md col-sm-12">
+          <div class="col-md col-sm-12 me-md-5">
             <form id="myForm" action="{% url 'contact' %}" method="POST">
               {% csrf_token %}
               <input type="text" name="name" class="form-control border border-dark rounded-1 mb-3 font-p" placeholder="Name" required>
               <input type="email" name="email" id="email" class="form-control border border-dark  rounded-1 mb-3 font-p" spellcheck="false" onkeyup="validateEmail(this)" placeholder="Email">
               <input type="text" name="subject" class="form-control  border border-dark rounded-1 mb-3 font-p" placeholder="Subject" required>
               <textarea name="message" class="form-control  border border-dark rounded-1 mb-3 font-p" rows="3" placeholder="Message" required></textarea>
-              <button id="submit" type="submit" class="btn btn-dark rounded-1 mb-3 me-1 disabled" >Get In Touch</button>
-              <a target="_blank" href="https://github.com/niranjan-46" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 "><img class="contact-btn" src=" {% static 'img/github.svg' %}" alt=""></a>
-              <a target="_blank" href="http://www.linkedin.com/in/niranjan-rao-annavarapu" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 "><img class="contact-btn" src="{% static 'img/linkedin.svg' %}" alt=""></a>
-              <a target="_blank" href="https://x.com/niranjanan28651?s=21&t=ZwRQFbteB3_Wta00haEuiA" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 "><img class="contact-btn" src="{% static 'img/twitter.svg' %}" alt=""></a>
-              <a target="_blank" href="mailto:niranjan.devops.specialist@gmail.com" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 "><img class="contact-btn" src="{% static 'img/envelope.svg' %}" alt=""></a> 
+              <button id="submit" type="submit" class="btn btn-dark rounded-2 mb-3 me-1 disabled mt-3" style="height: 42px;">Get In Touch</button>
+              <a target="_blank" href="https://github.com/niranjan-46" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 rounded-2"><img class="contact-btn" src=" {% static 'img/github.svg' %}" alt=""></a>
+              <a target="_blank" href="http://www.linkedin.com/in/niranjan-rao-annavarapu" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 rounded-2 "><img class="contact-btn" src="{% static 'img/linkedin.svg' %}" alt=""></a>
+              <a target="_blank" href="https://x.com/niranjanan28651?s=21&t=ZwRQFbteB3_Wta00haEuiA" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 rounded-2 "><img class="contact-btn" src="{% static 'img/twitter.svg' %}" alt=""></a>
+              <a target="_blank" href="mailto:niranjancloud9@gmail.com" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 rounded-2"><img class="contact-btn" src="{% static 'img/envelope.svg' %}" alt=""></a> 
               {% comment %} <span class=" d-flex  text-success message"></span> {% endcomment %}
               {% if request.GET.message == "success" %}
                 <p class="text-success">Your message was sent successfully,&nbsp; {{ request.GET.name }}!</p>
@@ -336,17 +498,17 @@
               {% endif %}
             </form>
           </div>
-          <div class="col mb-3">
-            <h1 id="h1">Hello, I am <span id="hero-name">Niranjan Rao</span>, <span id="role-name">DevOps</span> Engineer</h1>
-            <p class="font-p">I'm a DevOps Engineer with a passion for automation and cloud infrastructure. I have experience with AWS, Docker, Kubernetes, Jenkins, and more. I'm always looking to learn new technologies and improve my skills.</p>
-            <h6 class="">niranjan.devops.specialist @gmail.com</h6>
+          <div class="col mb-3 ">
+            <div class="mb-3 " id="contact-head">Let’s <span id="contact-name">talk</span><br> for Something special</div>
+            <p class="mb-3" id="contact-p">Experienced in AWS, Docker, Kubernetes, and Jenkins. Passionate about learning and mastering new technologies to drive innovation.</p>
+            <h6 id="contact-mail">niranjancloud9@gmail.com</h6>
           </div>
         </div>
       </div>
     </section>
     <!-- footer section -->
     <footer class="footer bg-black text-white py-3">
-      <div class="container d-flex flex-column flex-lg-row justify-content-between">
+      <div class="container d-flex flex-column flex-lg-row justify-content-between" id="footer-1">
         <div class="container">
           <a target="_blank"  href="#" class="text-decoration-none text-white">Developed by <strong>Vamsi Krishna</strong></a><br>
           <a href="mailto:vamsikrishna.nagidi@gmail.com" class="text-decoration-none text-white">vamsikrishna.nagidi@gmail.com</a><br>
@@ -358,12 +520,17 @@
         <br>
         <div class="container text-end">
           <a href="#" class="text-decoration-none text-white">Hosted by <strong>Niranjan Rao</strong> (DevOps Engineer)</a><br>
-          <a href="mailto:niranjan.devops.specialist@gmail.com" class="text-decoration-none text-white">niranjan.devops.specialist@gmail.com</a><br>
+          <a href="mailto:niranjan.devops.specialist@gmail.com" class="text-decoration-none text-white">niranjancloud9@gmail.com</a><br>
           <a target="_blank" href="https://github.com/niranjan-46"><img width="20" height="20" src="https://img.icons8.com/ios-filled/20/FFFFFF/github.png" alt="github"/></a>
           <a target="_blank" href="http://www.linkedin.com/in/niranjan-rao-annavarapu"><img width="20" height="20" src="https://img.icons8.com/ios-filled/20/FFFFFF/linkedin.png" alt="linkedin"/></a>
           <a target="_blank" href="https://x.com/niranjanan28651?s=21&t=ZwRQFbteB3_Wta00haEuiA"><img width="24" height="24" src="https://img.icons8.com/material-sharp/24/FFFFFF/twitterx--v1.png" alt="twitterx--v1"/></a>
         </div>
       </div>
+
+      <div class="text-center p-3 text-white" id="footer-2">
+        © 2024 Niranjan Rao | All Rights Reserved  
+      </div>
+    
     </footer>
 
     <script src=" {% static 'js/app.js' %} "></script>

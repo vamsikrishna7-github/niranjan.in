@@ -127,5 +127,3 @@ function messageSend(btn) {
         if (btn) btn.classList.add('disabled');
     }, 1000);
 }
-
-

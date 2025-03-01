@@ -1,0 +1,48 @@
+/* static/css/admin_login.css */
+body {
+    background-color: #363740;
+    margin: 0;
+    padding: 0;
+}
+
+#login-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+#login-form .btn-primary {
+    width: 100%;
+    background-color: #575dfb;
+    border: none;
+}
+
+#login-form label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #575dfb;
+    margin-bottom: 3px;
+}
+
+#login-form h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #575dfb;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#login-form input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.errornote {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}

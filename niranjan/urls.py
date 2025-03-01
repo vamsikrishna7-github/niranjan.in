@@ -16,10 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from home.views import homeView, contact_view
+from home.views import contact_list, homeView, contact_view, custom_logout
+
+from django.urls import path
+from home.views import contact_list, custom_logout, custom_login, delete_contact
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', homeView, name='home'),
+    path("admin/", custom_login, name="custom_login"),
+    path("admin/contact-list/", contact_list, name="contact_list"),
+    path("logout/", custom_logout, name="custom_logout"),
+
+    path("admin/contact-delete/<int:contact_id>/", delete_contact, name="delete_contact"), 
+
+ 
+    path("", homeView, name="home"),
     path("contact/", contact_view, name="contact"),
 ]
