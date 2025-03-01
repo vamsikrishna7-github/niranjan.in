@@ -52,25 +52,24 @@ Steps to Set Up the Project
     $ python -m venv venv
     $ source venv/bin/activate  # On Windows: venv\Scripts\activate
   3. Install Dependencies:
-     $ pip install -r requirements.txt
+    $ pip install -r requirements.txt
   4. Set Up the Database:
-     $ python manage.py makemigrations 
-     $ python manage.py migrate   #Apply migrations to create the database schema
+    $ python manage.py makemigrations 
+    $ python manage.py migrate   #Apply migrations to create the database schema
   6. Create a Superuser (Admin):
-     $ python manage.py createsuperuser
+    $ python manage.py createsuperuser
   7. Configure Email Settings:
-     #Update the settings.py file with your email backend configuration (e.g., SMTP settings for sending emails).
-     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-     EMAIL_HOST = 'smtp.gmail.com'
-     EMAIL_PORT = 587
-     EMAIL_USE_TLS = True
-     EMAIL_HOST_USER = 'your-email@gmail.com'
-     EMAIL_HOST_PASSWORD = 'your-email-password'
+    #Update the settings.py file with your email backend configuration (e.g., SMTP settings for sending emails).
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_PORT = 587
+    EMAIL_USE_TLS = True
+    EMAIL_HOST_USER = 'your-email@gmail.com'
+    EMAIL_HOST_PASSWORD = 'your-email-password'
   8. Run the Development Server:
-     $ python manage.py makemigrations
-     $ python manage.py migrate
-     $ python manage.py runserver #if any error is encountered for port number change port number to another port ex: 555
-     #Visit http://127.0.0.1:8000/ in your browser to view the website.
+    $ python manage.py runserver 
+    #if any error is encountered for port number change port number to another port ex: 555
+    #Visit http://127.0.0.1:8000/ in your browser to view the website.
      
 Usage
 ******
@@ -87,11 +86,11 @@ Usage
        
 Contributing
 **************
-  This is an open-source project. Contributions are welcome! If you'd like to contribute, please follow these steps:
-  1. Fork the repository.
-  2. Create a new branch for your feature or bugfix.
-  3. Commit your changes.
-  4. Submit a pull request.
+    This is an open-source project. Contributions are welcome! If you'd like to contribute, please follow these steps:
+    1. Fork the repository.
+    2. Create a new branch for your feature or bugfix.
+    3. Commit your changes.
+    4. Submit a pull request.
 
 License
 ********
@@ -99,12 +98,13 @@ License
 
 Acknowledgments
 ****************
-  Vamsi Krishna: Project Developer
-  Bootstrap: For the responsive design framework.
-  Django: For the powerful backend framework.
+    Vamsi Krishna: Project Developer
+    Bootstrap: For the responsive design framework.
+    Django: For the powerful backend framework.
 
 Contact
 *********
-  For any questions or feedback, feel free to reach out:
-  Email: vamsikrishna.nagidi@gmail.com
-  GitHub: vamsikrishna7-github
+    For any questions or feedback, feel free to reach out:
+    Email: vamsikrishna.nagidi@gmail.com
+    GitHub: vamsikrishna7-github
+    linkedIn: https://www.linkedin.com/in/vamsi-krishna-nagidi-742314233/
