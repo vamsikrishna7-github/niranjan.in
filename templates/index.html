@@ -48,25 +48,37 @@
         </div>
       </div>
     </nav>
-     <!-- home section -->
-    <section id="home" class="py-5">
-      <div class="container-fluid container-md">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h1 id="h1">Hello, I am <span id="hero-name">Niranjan Rao</span>, <span id="role-name">DevOps</span> Engineer</h1>
-            <p>Passionate about automating and optimizing cloud infrastructure. With hands-on experience in AWS services like EC2, VPC, RDS, and CloudWatch, I specialize in deploying, managing, and monitoring production-level applications. Skilled in CI/CD automation using Jenkins and GitHub Actions, I strive to build scalable, secure, and efficient DevOps solutions.</p>
-            <div class="d-flex">
-              <a target="_blank" href="https://github.com/niranjan-46" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark me-3"><img class="contact-btn" src="{% static 'img/github.svg' %}" alt=""></a>
-              <a target="_blank" href="http://www.linkedin.com/in/niranjan-rao-annavarapu" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark me-3"><img class="contact-btn" src=" {% static 'img/linkedin.svg' %}" alt=""></a>
-              <a target="_blank" href="https://x.com/niranjanan28651?s=21&t=ZwRQFbteB3_Wta00haEuiA" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark me-3"><img class="contact-btn" src=" {% static 'img/twitter.svg' %}" alt=""></a>
-              <a id="contact-btn-home-last" target="_blank" href="mailto:niranjancloud9@gmail.com" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark"><img class="contact-btn" src=" {% static 'img/envelope.svg' %} " alt=""></a>
-            </div>
-          </div>
-          <div class="col-md-6 text-center">
-            <img class="custom-img img-fluid border-bottom border-2 border-dark" style="filter: grayscale(100%);" src=" {% static 'img/ahero.png' %} " alt="">
-          </div>
+    <!-- Home Section -->
+<section id="home" class="py-5">
+  <div class="container-fluid container-md">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 id="h1">Hello, I’m <span id="hero-name">Niranjan Rao</span>, a <span id="role-name">DevOps Engineer</span></h1>
+        <p>
+          I’m passionate about automating and optimizing cloud infrastructure to enhance scalability and efficiency. With hands-on experience in AWS services like EC2, VPC, RDS, and CloudWatch, I specialize in deploying, managing, and monitoring production-level applications. Skilled in CI/CD automation using Jenkins and GitHub Actions, I focus on building secure, scalable, and high-performance DevOps solutions.
+        </p>
+        <div class="d-flex">
+          <a target="_blank" href="https://github.com/niranjan-46" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark me-3">
+            <img class="contact-btn" src="{% static 'img/github.svg' %}" alt="GitHub">
+          </a>
+          <a target="_blank" href="http://www.linkedin.com/in/niranjan-rao-annavarapu" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark me-3">
+            <img class="contact-btn" src="{% static 'img/linkedin.svg' %}" alt="LinkedIn">
+          </a>
+          <a target="_blank" href="https://x.com/niranjanan28651?s=21&t=ZwRQFbteB3_Wta00haEuiA" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark me-3">
+            <img class="contact-btn" src="{% static 'img/twitter.svg' %}" alt="Twitter">
+          </a>
+          <a id="contact-btn-home-last" target="_blank" href="mailto:niranjancloud9@gmail.com" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark">
+            <img class="contact-btn" src="{% static 'img/envelope.svg' %}" alt="Email">
+          </a>
         </div>
       </div>
+      <div class="col-md-6 text-center">
+        <img class="custom-img img-fluid border-bottom border-2 border-dark" style="filter: grayscale(100%);" src="{% static 'img/ahero.png' %}" alt="Profile Image">
+      </div>
+    </div>
+  </div>
+</section>
+
     
     <br>
     <br>
@@ -229,51 +241,66 @@
         </div>
       </div>
     </section>
-    <!-- experience section -->
-    <section id="experience">
-      <div class="container-fluid  text-white  pb-5 bg-black">
+<!-- Experience Section -->
+<section id="experience">
+  <div class="container-fluid text-white pb-5 bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center text-white h2 my-5">
+          <span class="sm-h">My </span><span class="font-H1 md-h">Experience</span>
+        </div>
+      </div>
+      <div class="row border border-secondary rounded-2 justify-content-between align-items-center">
+        <div class="col d-flex justify-content-between">
+          <div class="d-flex align-items-start">
+            <img class="mt-2" width="40px" height="40px" src="{% static 'img/company.png' %}" alt="Company Logo">
+            <h6 class="m-3">Associate Software Engineer</h6>
+          </div>
+          <p class="text-secondary mt-3 font-Ep">July 2024 – Present</p>
+        </div>
         <div class="container">
-          <div class="row">
-            <div class="col-12 text-center text-white h2 my-5"><span class="sm-h">My </span><span class="font-H1 md-h">Experience</span></div>
-          </div>
-          <div class="row  border border-secondary rounded-2  justify-content-between align-items-center">
-            <div class="col d-flex justify-content-between">
-              <div class="d-flex align-items-start">
-                <img class="mt-2" width="40px" height="40px" src=" {% static 'img/company.png' %} " alt="">
-                <h6 class="m-3">Associate Software Engineer
-                </h6>
-              </div> 
-                <p class=" text-secondary mt-3 font-Ep">July/2024-Present</p>
-            </div>
-            <div class="container">
-              <p class="font-ep">At Dyashin TechnoSoft Pvt Ltd, I am an Associate Software Engineer where I manage and deploy applications utilizing AWS App Runner, EC2, and PostgreSQL RDS. I am responsible for devising cloud infrastructure that incorporates VPC, RDS and CloudWatch, as well as automating CI/CD pipelines with Jenkins and GitHub Actions. Additionally, I simplify deployments using Docker and Amazon ECR. Furthermore, I maintain infrastructure using Ansible, manage PostgreSQL, configure VPCs along with load balancers, and monitor high availability performance with CloudWatch.</p>
-            </div>
-          </div>
+          <p class="font-ep">
+            <strong>Dyashin TechnoSoft Pvt Ltd </strong>
+          </p>
+          <p class="font-ep">
+            As an Associate Software Engineer, I specialize in deploying, managing, and optimizing cloud-based applications using AWS services such as App Runner, EC2, and PostgreSQL RDS. My responsibilities include:
+          </p>
+          <ul class="font-ep">
+            <li><strong>Cloud Infrastructure Management:</strong> Designing and implementing scalable cloud architectures incorporating VPC, RDS, and CloudWatch.</li>
+            <li><strong>CI/CD Automation:</strong> Developing and maintaining CI/CD pipelines using Jenkins and GitHub Actions to streamline software deployment.</li>
+            <li><strong>Containerization & Deployment:</strong> Simplifying and optimizing deployments through Docker and Amazon ECR.</li>
+            <li><strong>Infrastructure as Code (IaC):</strong> Managing infrastructure efficiently using Ansible for automation and configuration management.</li>
+            <li><strong>Database Management:</strong> Administering and optimizing PostgreSQL databases for high availability and performance.</li>
+            <li><strong>Networking & Security:</strong> Configuring VPCs, subnets, and load balancers to ensure secure and robust cloud environments.</li>
+            <li><strong>Monitoring & Performance Optimization:</strong> Utilizing AWS CloudWatch to monitor application performance, ensure high availability, and enable quick incident resolution.</li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!-- about me section -->
-    <section id="about-me">
-      <div class="container-fluid container-md my-5">
-        <div class="container-fluid border">
-          <div class="row d-md-flex flex-column flex-md-row">
-            <div class="col border text-center justify-content-center align-items-center d-flex">
-              <img class="border-bottom border-dark img-fluid" width="300px" height="400px" style="filter: grayscale(100%);" src=" {% static 'img/about/about-hero.png' %} " alt="">
-            </div>
-            <div class="col">
-              <h2 class="sm-h my-3">About <span class="font-H md-h">Me</span></h2>
-              <p class="font-ap">I'm Niranjan Rao, and I am a DevOps Engineer who deploys and operates applications using AWS technologies such as EC2, VPC and RDS. I also automate the communication between software and deployment tools using Jenkins and GitHub Actions for DevOps to make CI/CD processes easier. My DevOps skills also include the use of Docker, Ansible and CloudWatch for automation. <br> <br>
+    </div>
+  </div>
+</section>
+   <!-- About Me Section -->
+<section id="about-me">
+  <div class="container-fluid container-md my-5">
+    <div class="container-fluid border">
+      <div class="row d-md-flex flex-column flex-md-row">
+        <div class="col border text-center justify-content-center align-items-center d-flex">
+          <img class="border-bottom border-dark img-fluid" width="300px" height="400px" style="filter: grayscale(100%);" src="{% static 'img/about/about-hero.png' %}" alt="About Me Image">
+        </div>
+        <div class="col">
+          <h2 class="sm-h my-3">About <span class="font-H md-h">Me</span></h2>
+          <p class="font-ap">
+            I'm <strong>Niranjan Rao</strong>, a <strong>DevOps Engineer</strong> specializing in deploying and managing applications using <strong>AWS technologies</strong> such as <strong>EC2, VPC, and RDS</strong>. I automate infrastructure and deployment processes with <strong>Jenkins and GitHub Actions</strong>, streamlining CI/CD workflows for efficient and reliable software delivery. My expertise also includes <strong>Docker, Ansible, and CloudWatch</strong>, enabling automation, monitoring, and optimized infrastructure management.<br><br>
 
-                I architect secure cloud infrastructure and administer PostgreSQL. I provision VPCs, Subnets, Load balancers and My projects such as automating CI/CD for an Amazon Prime Clone showcase my skill set in using Docker, AWS EKS and SonarQube. <br> <br>
-                
-                I hold a Bachelor's in Computer Science and a Polytechnic diploma, which allows me to bring value with my technical problem-solving skills. DevOps is a field that I am very passionate about and I'm always ready to learn new technologies and strive to solve problems in innovations in DevOps.
-                
-                </p>
-            </div>
-          </div>
+            I design <strong>secure and scalable cloud architectures</strong>, administer <strong>PostgreSQL</strong>, and configure <strong>VPCs, subnets, and load balancers</strong> to ensure robust application performance. My projects, such as <strong>automating CI/CD for an Amazon Prime Clone</strong>, demonstrate my proficiency in <strong>Docker, AWS EKS, and SonarQube</strong> for continuous integration, security, and performance analysis.<br><br>
+
+            I hold a <strong>Bachelor's degree in Computer Science</strong> and a <strong>Polytechnic diploma</strong>, equipping me with strong technical problem-solving skills. <strong>DevOps is my passion</strong>, and I am always eager to explore new technologies, innovate, and solve complex challenges in cloud computing and automation.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
     <!-- project section -->
     <section id="projects" class="bg-black py-5">
       <div class="container">
@@ -449,7 +476,7 @@
               <div class="card-body">
                 <h4 class="title-card">Vamsi Krishna</h4>
                 <div class="hr"></div>
-                <p class="text-secondary text-body">Back-End Developer &amp; Front-End Developer</p>
+                <p class="text-secondary text-body">full stack developer</p>
                 <a target="_blank" href="https://www.linkedin.com/in/vamsi-krishna-nagidi-742314233/" class="btn btn-outline-dark">Contact me!</a>
               </div>
             </div>
