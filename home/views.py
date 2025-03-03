@@ -33,7 +33,7 @@ def contact_view(request):
             send_mail(
                 "Thank You for Contacting Me!",
                 "This is a plain text fallback message.", 
-                "vamsikrishna.backend.dev@gmail.com",  
+                "cloudworld.a@gmail.com",  
                 [email],  
                 fail_silently=False,
                 html_message=sender_html_content,  
@@ -43,7 +43,7 @@ def contact_view(request):
             send_mail(
                 "New Contact Form Submission",
                 "A new message was received.",
-                "vamsikrishna.backend.dev@gmail.com",
+                "cloudworld.a@gmail.com",
                 ["niranjancloud9@gmail.com"],
                 fail_silently=False,
                 html_message=admin_html_content,
