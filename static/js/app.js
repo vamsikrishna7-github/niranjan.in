@@ -110,6 +110,41 @@ function validateEmail(Vmail) {
     }
 }
 
+// Phone number validation
+function validatePhone(Vphone) {
+    const send = document.getElementById('submit'); 
+    const phoneValue = Vphone.value.trim();
+
+    const phoneRegex = /^\d{10,15}$/;
+
+    const hasRepeatedNumbers = /^(\d)\1{9,14}$/.test(phoneValue);
+
+    const isSequential = (phoneValue) => {
+        const ascending = '0123456789';
+        const descending = '9876543210';
+        return phoneValue === ascending.slice(0, phoneValue.length) || 
+               phoneValue === descending.slice(0, phoneValue.length);
+    };
+
+    if (!phoneRegex.test(phoneValue)) {
+        if (send) send.disabled = true; 
+        Vphone.classList.remove('border-dark', 'border-success', 'text-success');
+        Vphone.classList.add('border-danger', 'text-danger');
+        return false;
+    } else if (hasRepeatedNumbers || isSequential(phoneValue)) {
+        if (send) send.disabled = true; 
+        Vphone.classList.remove('border-dark', 'border-success', 'text-success');
+        Vphone.classList.add('border-danger', 'text-danger');
+        return false;
+    } else {
+        if (send) send.disabled = false; 
+        Vphone.classList.remove('border-danger', 'text-danger', 'border-dark');
+        Vphone.classList.add('border-success', 'text-success');
+        return true;
+    }
+}
+
+
 // response
 function messageSend(btn) {
     const email = document.getElementById('email');
@@ -127,3 +162,7 @@ function messageSend(btn) {
         if (btn) btn.classList.add('disabled');
     }, 1000);
 }
+
+window.addEventListener('load', function() {
+    document.getElementById('loader').style.display = 'none';
+});

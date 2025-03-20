@@ -24,9 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)bk71sd@pw1*fvuh7zj%j@mcr8trop!9+1eitmw709edti_4k%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['niranjan.cloud', '.niranjan.cloud']
+
 
 
 # Application definition
@@ -39,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'captcha',
+    'django_recaptcha',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +141,14 @@ EMAIL_HOST_PASSWORD = 'nnfs peqj vspk icin'
 
 
 LOGIN_URL = "/admin/"
+
+# # captcha settings
+RECAPTCHA_PUBLIC_KEY = "6Lds4e0qAAAAAMo-hNW5n7ViSl29D6vZBmGJPKGj"
+RECAPTCHA_PRIVATE_KEY = "6Lds4e0qAAAAAEU5awIdxjQz1bPVZ80RBfe1PZnD"
+
+#test captcha settings
+# RECAPTCHA_PUBLIC_KEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+# RECAPTCHA_PRIVATE_KEY = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe"
+# SILENCED_SYSTEM_CHECKS = ['django_recaptcha.recaptcha_test_key_error']
+
+RECAPTCHA_REQUIRED = True

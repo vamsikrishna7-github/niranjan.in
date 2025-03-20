@@ -1,9 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact List</title>
+    <link rel="icon" type="image/png" href="{% static 'img/urlicon.webp' %}">
+    <title>Niranjan Rao | Emails</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
 </head>
 <body>
@@ -29,6 +31,7 @@
                         <th>User_ID</th>
                         <th>Name</th>
                         <th>Email</th>
+                        <th>Phone</th>
                         <th>Subject</th>
                         <th>Message</th>
                         <th>Created At</th>
@@ -38,9 +41,10 @@
                 <tbody>
                     {% for contact in contacts %}
                     <tr>
-                        <td>{{ contact.id }}</td>
+                        <td>{{ forloop.counter }}</td>
                         <td>{{ contact.name }}</td>
                         <td>{{ contact.email }}</td>
+                        <td>{{ contact.phone }}</td>
                         <td>{{ contact.subject }}</td>
                         <td>{{ contact.message }}</td>
                         <td>{{ contact.created_at }}</td>

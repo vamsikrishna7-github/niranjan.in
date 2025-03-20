@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Niranjan Rao</title>
-    <link rel="icon" type="image/png" href="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/external-Infinity-arrows-tanah-basah-basic-outline-tanah-basah.png">
+    <link rel="icon" type="image/png" href="{% static 'img/urlicon.webp' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -20,7 +20,7 @@
       <div class="container-fluid container-md">
         <a class="navbar-brand font-h" href="#">Niranjan</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          {% comment %} <span class="navbar-toggler-icon"></span> {% endcomment %} <i class="bi bi-menu-down fs-2"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto font-H5">
@@ -79,11 +79,16 @@
   </div>
 </section>
 
+  <div class="loader-wrapper w-100 text-center position-fixed top-50" id="loader">
+    <div class="spinner-border text-dark" role="status">
+    </div>
+  </div>
     
     <br>
     <br>
       
-      <!-- skills section -->
+      
+      <!-- Skills Section -->
       <div class="container-fluid container-md">
         <div class="container text-center cust-js">
           <!-- Section Heading -->
@@ -92,146 +97,123 @@
               <span class="sm-h">My </span><span class="font-H1 md-h">Skills</span>
             </div>
           </div>
-      
+
           <!-- Skill Buttons -->
           <div class="row justify-content-center">
             <!-- Linux -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
                 <img width="40" height="40" src="https://img.icons8.com/ios/100/linux.png" alt="linux"/>
                 <span>Linux</span>
               </button>
             </div>
-      
+
             <!-- Firewall -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
-                <img width="40" height="40" src="https://img.icons8.com/external-isometric-vectorslab/68/1A1A1A/external-Firewall-network-and-hosting-cloud-isometric-vectorslab.png" alt="external-Firewall-network-and-hosting-cloud-isometric-vectorslab"/>                <span>Firewall</span>
+                <img width="40" height="40" src="https://img.icons8.com/external-isometric-vectorslab/68/1A1A1A/external-Firewall-network-and-hosting-cloud-isometric-vectorslab.png" alt="firewall"/>
+                <span>Firewall</span>
               </button>
             </div>
-      
+
             <!-- AWS -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
-                <img width="40" height="40" src="https://img.icons8.com/windows/128/1A1A1A/amazon-web-services.png" alt="amazon-web-services"/>  
+                <img width="40" height="40" src="https://img.icons8.com/windows/128/1A1A1A/amazon-web-services.png" alt="aws"/>
                 <span>AWS</span>
               </button>
             </div>
-      
+
             <!-- Git -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
-                <img width="40" height="40" src="https://img.icons8.com/ios-filled/150/1A1A1A/git.png" alt="git"/>                
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/150/1A1A1A/git.png" alt="git"/>
                 <span>Git</span>
               </button>
             </div>
-      
+
             <!-- Ansible -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
-                <img width="40" height="40" src="https://img.icons8.com/windows/512/1A1A1A/ansible.png" alt="ansible"/>                
+                <img width="40" height="40" src="https://img.icons8.com/windows/512/1A1A1A/ansible.png" alt="ansible"/>
                 <span>Ansible</span>
               </button>
             </div>
-      
+
             <!-- Terraform -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
-                <img width="40" height="40" src="https://img.icons8.com/ios-filled/500/1A1A1A/terraform.png" alt="terraform"/>                
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/500/1A1A1A/terraform.png" alt="terraform"/>
                 <span>Terraform</span>
               </button>
             </div>
-      
+
             <!-- Bash -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
-                <img width="40" height="40" src="https://img.icons8.com/sf-regular-filled/96/1A1A1A/console--v1.png" alt="console--v1"/>                
+                <img width="40" height="40" src="https://img.icons8.com/sf-regular-filled/96/1A1A1A/console--v1.png" alt="bash"/>
                 <span>Bash</span>
               </button>
             </div>
-      
+
             <!-- Docker -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
-                <img width="40" height="40" src="https://img.icons8.com/ios-filled/500/1A1A1A/docker.png" alt="docker"/>                
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/500/1A1A1A/docker.png" alt="docker"/>
                 <span>Docker</span>
               </button>
             </div>
-      
+
             <!-- Kubernetes -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
-                <img width="40" height="40" src="https://img.icons8.com/windows/512/kubernetes.png" alt="kubernetes"/>                
+                <img width="40" height="40" src="https://img.icons8.com/windows/512/kubernetes.png" alt="kubernetes"/>
                 <span>Kubernetes</span>
               </button>
             </div>
-      
+
             <!-- Jenkins -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
-                <img width="40" height="40" src="https://img.icons8.com/ios/500/1A1A1A/jenkins.png" alt="jenkins"/>                
+                <img width="40" height="40" src="https://img.icons8.com/ios/500/1A1A1A/jenkins.png" alt="jenkins"/>
                 <span>Jenkins</span>
               </button>
             </div>
-      
+
             <!-- Maven -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
-                <img width="40" height="40" src="https://img.icons8.com/ios/100/1A1A1A/maven-ios.png" alt="maven-ios"/>                
+                <img width="40" height="40" src="https://img.icons8.com/ios/100/1A1A1A/maven-ios.png" alt="maven"/>
                 <span>Maven</span>
               </button>
             </div>
-      
+
             <!-- Nginx -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
                 <img width="40" height="40" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/100/1A1A1A/external-nginx-accelerates-content-and-application-delivery-improves-security-logo-bold-tal-revivo.png" alt="nginx"/>
                 <span>Nginx</span>
               </button>
             </div>
-      
+
             <!-- Prometheus -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
-                <img width="40" height="40" src="https://img.icons8.com/external-others-maxicons/100/1A1A1A/external-prometheus-greek-mythology-others-maxicons-2.png" alt="external-prometheus-greek-mythology-others-maxicons-2"/>                
+                <img width="40" height="40" src="https://img.icons8.com/external-others-maxicons/100/1A1A1A/external-prometheus-greek-mythology-others-maxicons-2.png" alt="prometheus"/>
                 <span>Prometheus</span>
               </button>
             </div>
-      
+
             <!-- Grafana -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
                 <img width="40" height="40" src="{% static 'img/skills/grafana.png' %}" alt="grafana"/>
                 <span>Grafana</span>
               </button>
             </div>
-      
-            <!-- Data Dog -->
-            <div class="col-6 col-md-2 mb-4">
-              <button class="cust-bt">
-                <img width="40" height="40" src="{% static 'img/skills/data-dog.png' %}" alt="data-dog"/>
-                <span>Data Dog</span>
-              </button>
-            </div>
-      
-            <!-- Sonarqube -->
-            <div class="col-6 col-md-2 mb-4">
-              <button class="cust-bt">
-                <img width="40" height="40" src="{% static 'img/skills/sonarqube.png' %}" alt="sonarqube"/>
-                <span>Sonarqube</span>
-              </button>
-            </div>
-      
-            <!-- Pgadmin -->
-            <div class="col-6 col-md-2 mb-4">
-              <button class="cust-bt">
-                <img width="40" height="40" src="{% static 'img/skills/pgadmin.png' %}" alt="pgadmin"/>
-                <span>Pgadmin</span>
-              </button>
-            </div>
-      
+
             <!-- Python -->
-            <div class="col-6 col-md-2 mb-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 d-flex justify-content-center">
               <button class="cust-bt">
                 <img width="40" height="40" src="https://img.icons8.com/ios-filled/50/1A1A1A/python.png" alt="python"/>
                 <span>Python</span>
@@ -240,6 +222,8 @@
           </div>
         </div>
       </div>
+
+
     </section>
 <!-- Experience Section -->
 <section id="experience">
@@ -471,13 +455,13 @@
             <div class="card border-0 h-100" style="max-width: 300px;">
               <div class="card-header bg-black text-white rounded-top">
                 <span class="overlay"></span>
-                <img class="img-card img-fluid" src=" {% static 'img/team/hero.jpg' %} " alt="img">
+                <img class="img-card img-fluid" src=" {% static 'img/team/vamsi.jpg' %} " alt="img">
               </div>
               <div class="card-body">
                 <h4 class="title-card">Vamsi Krishna</h4>
                 <div class="hr"></div>
                 <p class="text-secondary text-body">full stack developer</p>
-                <a target="_blank" href="https://www.linkedin.com/in/vamsi-krishna-nagidi-742314233/" class="btn btn-outline-dark">Contact me!</a>
+                <a target="_blank" href="https://vamsikrishna.site/" class="btn btn-outline-dark">Contact me!</a>
               </div>
             </div>
           </div>
@@ -493,7 +477,7 @@
                 <h4 class="title-card">Niranjan Rao</h4>
                 <div class="hr"></div>
                 <p class="text-secondary text-body">DevOps Engineer</p>
-                <a href="#" class="btn btn-outline-dark">Contact me!</a>
+                <a href="#contact-me" class="btn btn-outline-dark">Contact me!</a>
               </div>
             </div>
           </div>
@@ -510,8 +494,10 @@
               {% csrf_token %}
               <input type="text" name="name" class="form-control border border-dark rounded-1 mb-3 font-p" placeholder="Name" required>
               <input type="email" name="email" id="email" class="form-control border border-dark  rounded-1 mb-3 font-p" spellcheck="false" onkeyup="validateEmail(this)" placeholder="Email">
+              <input type="tel" name="phone" class="form-control border border-dark rounded-1 mb-3 font-p" placeholder="Phone Number" onkeyup="validatePhone(this)" required>
               <input type="text" name="subject" class="form-control  border border-dark rounded-1 mb-3 font-p" placeholder="Subject" required>
               <textarea name="message" class="form-control  border border-dark rounded-1 mb-3 font-p" rows="3" placeholder="Message" required></textarea>
+              {{ form.captcha }}
               <button id="submit" type="submit" class="btn btn-dark rounded-2 mb-3 me-1 disabled mt-3" style="height: 42px;">Get In Touch</button>
               <a target="_blank" href="https://github.com/niranjan-46" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 rounded-2"><img class="contact-btn" src=" {% static 'img/github.svg' %}" alt=""></a>
               <a target="_blank" href="http://www.linkedin.com/in/niranjan-rao-annavarapu" onmouseenter="mEnter(this)" onmouseleave="mExit(this)" class="btn btn-outline-dark mb-3 me-1 rounded-2 "><img class="contact-btn" src="{% static 'img/linkedin.svg' %}" alt=""></a>
@@ -521,7 +507,7 @@
               {% if request.GET.message == "success" %}
                 <p class="text-success">Your message was sent successfully,&nbsp; {{ request.GET.name }}!</p>
               {% elif request.GET.message == "error" %}
-                <p class="text-danger">There was an error sending your message. Please try again.</p>
+                <p class="text-danger">"Invalid CAPTCHA. Please try again."</p>
               {% endif %}
             </form>
           </div>
@@ -533,15 +519,41 @@
         </div>
       </div>
     </section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        {% if request.GET.message == "success" %}
+          <p class="text-success">Your message was sent successfully, {{ request.GET.name }}!</p>
+        {% elif request.GET.message == "error" %}
+          <p class="text-danger">Invalid CAPTCHA. Please try again.</p>
+        {% else %}
+          <p>No message to display.</p>
+        {% endif %}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <!-- footer section -->
     <footer class="footer bg-black text-white py-3">
       <div class="container d-flex flex-column flex-lg-row justify-content-between" id="footer-1">
         <div class="container">
-          <a target="_blank"  href="#" class="text-decoration-none text-white">Developed by <strong>Vamsi Krishna</strong></a><br>
+          <a target="_blank"  href="https://vamsikrishna.site/" class="text-decoration-none text-white">Developed by <strong>Vamsi Krishna</strong></a><br>
           <a href="mailto:vamsikrishna.nagidi@gmail.com" class="text-decoration-none text-white">vamsikrishna.nagidi@gmail.com</a><br>
           <a target="_blank" href="https://github.com/vamsikrishna7-github"><img width="20" height="20" src="https://img.icons8.com/ios-filled/20/FFFFFF/github.png" alt="github"/></a>
           <a target="_blank" href="https://www.linkedin.com/in/vamsi-krishna-nagidi-742314233/"><img width="20" height="20" src="https://img.icons8.com/ios-filled/20/FFFFFF/linkedin.png" alt="linkedin"/></a>
-          <a target="_blank" href="#"><img width="24" height="24" src="https://img.icons8.com/material-rounded/24/FFFFFF/portfolio.png" alt="portfolio"/></a>
+          <a target="_blank" href="https://vamsikrishna.site/"><img width="24" height="24" src="https://img.icons8.com/material-rounded/24/FFFFFF/portfolio.png" alt="portfolio"/></a>
           <a target="_blank" href="https://x.com/TheKrishnacode?t=y_igGz1Uw6Mcp19-CKaCHQ&s=09"><img width="24" height="24" src="https://img.icons8.com/material-sharp/24/FFFFFF/twitterx--v1.png" alt="twitterx--v1"/></a>
         </div>
         <br>
@@ -562,5 +574,23 @@
 
     <script src=" {% static 'js/app.js' %} "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+        {% if request.GET.message %}
+          myModal.show();
+        {% endif %}
+    
+        var modalElement = document.getElementById('exampleModal');
+        modalElement.addEventListener('hidden.bs.modal', function () {
+          var contactMeElement = document.getElementById('contact-me');
+          if (contactMeElement) {
+            contactMeElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    </script>
+
   </body>
 </html>
